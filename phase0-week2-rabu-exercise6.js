@@ -1,29 +1,26 @@
 function angkaPalindrome(num) {
   //variable nilai palindrom
-  var inipalindrom = false
-  var num;
+  var inipalindrom = false;
 
   //cek next item apakah palindrom
-  while(inipalindrom == false){
-    var num = num + 1;
+  while(inipalindrom === false) {
+    num = num + 1;
     var numStr = num.toString();
     var num_balik ='';
   
-  //get num_balik
-  for(var i = numStr.length-1; i >= 0; i--){
-    num_balik = num_balik + numStr[i];
+    //get num_balik
+    for(var i = numStr.length-1; i >= 0; i--) {
+        num_balik = num_balik + numStr[i];
+        
     }
-  
-  //ubah variabel number_balik jadi int
-
-  //cek jika number sama dengan yang dibalik
-   if(numStr == num_balik){
-     inipalindrom = true;
-     return num_balik;
-     }
-   else{
+    //cek jika number sama dengan yang dibalik
+    if(numStr == num_balik) {
+        inipalindrom = true;
+        return num;
+    }
+   else {
      inipalindrom = false;
-     }
+   }
   }
 }
 

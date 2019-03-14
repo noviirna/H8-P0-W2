@@ -16,9 +16,6 @@ function palindrome(kata) {
   }
   
 }
-
-
-
 // TEST CASES
 console.log(palindrome('katak')); // true
 console.log(palindrome('blanket')); // false
